@@ -1,0 +1,23 @@
+{
+  "name": "myportfoliowebsite",
+  "version": "1.0.0",
+  "description": "This is My Portfolio Website Project Created in MERN Stack Web Technologies.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PATHAKABHISHEK/MyPortfolioWebsite.git"
+  },
+  "author": "Abhishek Pathak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PATHAKABHISHEK/MyPortfolioWebsite/issues"
+  },
+  "homepage": "https://github.com/PATHAKABHISHEK/MyPortfolioWebsite#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.7"
+  }
+}
