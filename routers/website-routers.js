@@ -1,5 +1,7 @@
 const express = require('express');
 const key = require('../keys');
+const mongoose = require('mongoose');
+const Project = require('../databaseCode/ProjectSchemas');
 
 route = express.Router();
 
@@ -18,6 +20,14 @@ route.post('/login/validate', (req, res) => {
             res.render('create-project-form');
         }
     }
+});
+
+router.post('/login/validate/project/add', (req, res) => {
+    const project = new Project();
+    project.project_image_url = req.body.imageurl;
+    project.project_description = req.body.description;
+    project.project_url = req.body.projecturl;
+    project.save();
 });
 
 module.exports = route;
