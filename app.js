@@ -2,11 +2,14 @@
 
 // import statements
 const express = require('express');
+const route = require('./routers/website-routers');
+const ejs = require('ejs');
 
 const app = express();
-app.get('/', (req, res) => {
-    res.send('Hello World');
-});
+
+app.set('view engine', 'ejs');
+app.use('/', route);
+
 
 app.listen(process.env.PORT || 3000, () => {
     console.log('express is working fine !!');
